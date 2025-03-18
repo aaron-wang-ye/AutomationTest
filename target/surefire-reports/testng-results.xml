@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-18T17:02:09 GMT+08:00" name="Surefire suite" finished-at="2025-03-18T17:02:41 GMT+08:00" duration-ms="32312">
+    <groups>
+    </groups>
+    <test started-at="2025-03-18T17:02:09 GMT+08:00" name="Surefire test" finished-at="2025-03-18T17:02:41 GMT+08:00" duration-ms="32312">
+      <class name="com.example.demo.MainPageTest">
+        <test-method is-config="true" signature="setUpAll()[pri:0, instance:com.example.demo.MainPageTest@45667d98]" started-at="2025-03-18T17:02:09 GMT+08:00" name="setUpAll" finished-at="2025-03-18T17:02:09 GMT+08:00" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAll -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.demo.MainPageTest@45667d98]" started-at="2025-03-18T17:02:09 GMT+08:00" name="setUp" finished-at="2025-03-18T17:02:29 GMT+08:00" duration-ms="19901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="navigationToAllTools()[pri:0, instance:com.example.demo.MainPageTest@45667d98]" started-at="2025-03-18T17:02:29 GMT+08:00" name="navigationToAllTools" finished-at="2025-03-18T17:02:35 GMT+08:00" duration-ms="5836" status="FAIL">
+          <exception class="com.codeborne.selenide.ex.InvalidStateError">
+            <message>
+              <![CDATA[Invalid element state [By.xpath: //*[@data-test='suggestion-action']]: element click intercepted: Element <a data-test="suggestion-action" type="button" href="/products/" class="_main_xsnd5w_17 _modeRock_xsnd5w_242 _sizeS_xsnd5w_93 _alignIconLeft_xsnd5w_78 _light_xsnd5w_59">...</a> is not clickable at point (1009, 646). Other element would receive the click: <div data-nosnippet="" class="jetbrains-cookies-backdrop"></div>
+Screenshot: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288555060.0.png
+Page source: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288555060.0.html
+Timeout: 4 s.
+Caused by: ElementClickInterceptedException: element click intercepted: Element <a data-test="suggestion-action" type="button" href="/products/" class="_main_xsnd5w_17 _modeRock_xsnd5w_242 _sizeS_xsnd5w_93 _alignIconLeft_xsnd5w_78 _light_xsnd5w_59">...</a> is not clickable at point (1009, 646). Other element would receive the click: <div data-nosnippet="" class="jetbrains-cookies-backdrop"></div>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Invalid element state [By.xpath: //*[@data-test='suggestion-action']]: element click intercepted: Element <a data-test="suggestion-action" type="button" href="/products/" class="_main_xsnd5w_17 _modeRock_xsnd5w_242 _sizeS_xsnd5w_93 _alignIconLeft_xsnd5w_78 _light_xsnd5w_59">...</a> is not clickable at point (1009, 646). Other element would receive the click: <div data-nosnippet="" class="jetbrains-cookies-backdrop"></div>
+Screenshot: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288555060.0.png
+Page source: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288555060.0.html
+Timeout: 4 s.
+Caused by: ElementClickInterceptedException: element click intercepted: Element <a data-test="suggestion-action" type="button" href="/products/" class="_main_xsnd5w_17 _modeRock_xsnd5w_242 _sizeS_xsnd5w_93 _alignIconLeft_xsnd5w_78 _light_xsnd5w_59">...</a> is not clickable at point (1009, 646). Other element would receive the click: <div data-nosnippet="" class="jetbrains-cookies-backdrop"></div>
+at com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:19)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:153)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83)
+at jdk.proxy2/jdk.proxy2.$Proxy5.click(Unknown Source)
+at com.example.demo.MainPageTest.navigationToAllTools(MainPageTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a data-test="suggestion-action" type="button" href="/products/" class="_main_xsnd5w_17 _modeRock_xsnd5w_242 _sizeS_xsnd5w_93 _alignIconLeft_xsnd5w_78 _light_xsnd5w_59">...</a> is not clickable at point (1009, 646). Other element would receive the click: <div data-nosnippet="" class="jetbrains-cookies-backdrop"></div>
+  (Session info: chrome=134.0.6998.89)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bc3046bfe5956e5e440c3bbd968b7ea, clickElement {id=f.AAC6CDA2D652EC5F8F0F806E2B1A5904.d.3EA3248640B74119895BCCF04309D17B.e.47}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\38676\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49970/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4bc3046bfe5956e5e440c3bbd968b7ea)] -> xpath: //*[@data-test='suggestion-action']]
+Session ID: 4bc3046bfe5956e5e440c3bbd968b7ea
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.codeborne.selenide.commands.Click.defaultClick(Click.java:94)
+at com.codeborne.selenide.commands.Click.doClick(Click.java:72)
+at com.codeborne.selenide.commands.Click.click(Click.java:48)
+at com.codeborne.selenide.commands.Click.execute(Click.java:28)
+at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:23)
+at com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:159)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.InvalidStateError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigationToAllTools -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.demo.MainPageTest@45667d98]" started-at="2025-03-18T17:02:35 GMT+08:00" name="setUp" finished-at="2025-03-18T17:02:36 GMT+08:00" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="search()[pri:0, instance:com.example.demo.MainPageTest@45667d98]" started-at="2025-03-18T17:02:36 GMT+08:00" name="search" finished-at="2025-03-18T17:02:41 GMT+08:00" duration-ms="4818" status="FAIL">
+          <exception class="com.codeborne.selenide.ex.ElementNotFound">
+            <message>
+              <![CDATA[Element not found {[data-test='search-input']}
+Expected: exist
+Screenshot: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288560616.1.png
+Page source: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288560616.1.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='search-input']"}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element not found {[data-test='search-input']}
+Expected: exist
+Screenshot: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288560616.1.png
+Page source: file:/C:/Users/38676/Desktop/demo/build/reports/tests/1742288560616.1.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='search-input']"}
+at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:68)
+at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:117)
+at com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:25)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:153)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83)
+at jdk.proxy2/jdk.proxy2.$Proxy5.sendKeys(Unknown Source)
+at com.example.demo.MainPageTest.search(MainPageTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='search-input']"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4bc3046bfe5956e5e440c3bbd968b7ea, findElement {value=[data-test='search-input'], using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\38676\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49970/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bc3046bfe5956e5e440c3bbd968b7ea
+at jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:64)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:39)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:30)
+at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:101)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:134)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.demo.MainPageTest@45667d98]" started-at="2025-03-18T17:02:41 GMT+08:00" name="setUp" finished-at="2025-03-18T17:02:41 GMT+08:00" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="toolsMenu()[pri:0, instance:com.example.demo.MainPageTest@45667d98]" started-at="2025-03-18T17:02:41 GMT+08:00" name="toolsMenu" finished-at="2025-03-18T17:02:41 GMT+08:00" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toolsMenu -->
+      </class> <!-- com.example.demo.MainPageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
