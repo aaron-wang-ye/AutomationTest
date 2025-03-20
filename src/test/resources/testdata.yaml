@@ -1,0 +1,9 @@
+baidu_search:
+  -
+    keyword: "TestNG 教程"
+    expected_title: "TestNG 教程_百度搜索"
+    expected_result_count: 2000000
+  -
+    keyword: "Selenium 4"
+    expected_title: "Selenium 4_百度搜索"
+    expected_result_count: 1000000
